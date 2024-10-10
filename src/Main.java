@@ -1,15 +1,34 @@
+import entities.Worker;
+
+import java.util.Locale;
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Locale.setDefault(Locale.US);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Scanner scanner = new Scanner(System.in);
+        Worker worker = new Worker();
+
+        //Nome Funcionario
+        System.out.println("Enter worker name");
+        System.out.print("Name: ");
+        worker.name = scanner.nextLine();
+        System.out.println();
+
+
+        //Salario bruto
+        System.out.print("Enter Salary without discounts: ");
+        worker.grossSalary = scanner.nextDouble();
+        System.out.println();
+
+        //Imposto
+        System.out.print("Enter Salary without discounts: ");
+        worker.Tax = scanner.nextDouble();
+        System.out.println();
+
+
     }
 }
