@@ -1,4 +1,4 @@
-import entities.Worker;
+import entities.Employee;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -10,23 +10,23 @@ public class Main {
         Locale.setDefault(Locale.US);
 
         Scanner scanner = new Scanner(System.in);
-        Worker worker = new Worker();
+        Employee employee = new Employee();
 
         //Nome Funcionario
         System.out.println("Enter worker name");
         System.out.print("Name: ");
-        worker.name = scanner.nextLine();
+        employee.name = scanner.nextLine();
         System.out.println();
 
 
         //Salario bruto
         System.out.print("Enter Salary without discounts: ");
-        worker.grossSalary = scanner.nextDouble();
+        employee.grossSalary = scanner.nextDouble();
         System.out.println();
 
         //Imposto
         System.out.print("Enter Salary without discounts: ");
-        worker.Tax = scanner.nextDouble();
+        employee.Tax = scanner.nextDouble();
         System.out.println();
 
 
