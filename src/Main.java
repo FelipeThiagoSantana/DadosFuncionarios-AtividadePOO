@@ -9,6 +9,8 @@ public class Main {
     public static void main(String[] args) {
         Locale.setDefault(Locale.US);
 
+        double percentage;
+
         Scanner scanner = new Scanner(System.in);
         Employee employee = new Employee();
 
@@ -20,7 +22,7 @@ public class Main {
 
 
         //Salario bruto
-        System.out.print("Enter Salary without discounts: ");
+        System.out.print("Gross salary: ");
         employee.grossSalary = scanner.nextDouble();
         System.out.println();
 
@@ -28,6 +30,19 @@ public class Main {
         System.out.print("Enter Salary without discounts: ");
         employee.Tax = scanner.nextDouble();
         System.out.println();
+
+        System.out.println("Employee: " + employee);
+
+        System.out.println("Which percetage to increase salary?");
+        percentage = scanner.nextDouble();
+        employee.increaseSalary(percentage);
+        System.out.println();
+
+        System.out.println("Updated data: " + employee);
+
+
+
+
 
 
     }
