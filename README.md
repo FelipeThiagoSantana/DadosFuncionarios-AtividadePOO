@@ -8,9 +8,15 @@ afetado pela porcentagem) e mostrar novamente os dados do funcionário.
 Use a classe projetada abaixo.
 
 #### Exemplo:
+
 Name: Joao Silva
+
 Gross salary: 6000.00
+
 Tax: 1000.00
+
 Employee: Joao Silva, $ 5000.00
+
 Which percentage to increase salary? 10.0
+
 Updated data: Joao Silva, $ 5600.00
